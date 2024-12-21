@@ -1,0 +1,12 @@
+spring:
+  profiles:
+    active: dev
+  application:
+    name: demo
+  h2:
+    console:
+      enabled: true
+
+springdoc:
+  swagger-ui:
+    path: /api-docs

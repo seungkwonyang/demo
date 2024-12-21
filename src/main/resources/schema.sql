@@ -1,0 +1,22 @@
+-- brands 테이블 생성
+CREATE TABLE brands (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL UNIQUE
+);
+
+CREATE TABLE categories (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    code VARCHAR(50) NOT NULL UNIQUE,
+    name VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE products (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    brand_id BIGINT NOT NULL,
+    category_code VARCHAR(50) NOT NULL,
+    price INT NOT NULL,
+    FOREIGN KEY (brand_id) REFERENCES brands(id) ON DELETE CASCADE,
+    FOREIGN KEY (category_code) REFERENCES categories(code) ON DELETE CASCADE
+);
+
+

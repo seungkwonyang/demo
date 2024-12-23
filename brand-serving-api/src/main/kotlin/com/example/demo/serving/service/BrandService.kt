@@ -6,7 +6,6 @@ import com.example.demo.serving.dto.Product
 import com.fasterxml.jackson.module.kotlin.jacksonObjectMapper
 import org.springframework.data.redis.core.ReactiveRedisTemplate
 import org.springframework.stereotype.Service
-import reactor.core.publisher.Flux
 import reactor.core.publisher.Mono
 
 @Service

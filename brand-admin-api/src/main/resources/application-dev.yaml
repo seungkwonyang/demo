@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+    initialization-mode: always # 데이터 초기화를 항상 실행
+  jpa:
+    hibernate:
+      ddl-auto: none # Hibernate가 스키마를 생성하지 않음 (schema.sql로 처리)

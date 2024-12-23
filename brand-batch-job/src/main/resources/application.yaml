@@ -1,0 +1,11 @@
+spring:
+  profiles:
+    active: dev
+  application:
+    name: brand-batch-service
+  h2:
+    console:
+      enabled: true
+springdoc:
+  swagger-ui:
+    path: /api-docs

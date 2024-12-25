@@ -20,7 +20,11 @@ The Product API allows clients to:
     ```bash
     brew install redis
     ```
-2. redis 접속
+2. redis service start
+    ```bash
+    brew services start redis
+    ```
+3. redis 접속
     ```bash
     redis-cli
     ```

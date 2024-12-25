@@ -9,7 +9,7 @@ The Product API allows clients to:
 - serving-api : 상품 조회를 위한 serving api
 - batch-job : 빠른 조회를 위한 사전에 복잡한 비지니스 요건에 대응하기 위한 cache layer
 
-## 프로젝트 별 port
+## application 별 port
 - admin-api : 기본 8080
 - serving-api : 9091
 - batch-job : 9090
@@ -24,6 +24,10 @@ The Product API allows clients to:
     ```bash
     redis-cli
     ```
+## application 별 swagger 주소
+- admin-api : http://localhost:8080/swagger-ui/index.html
+- serving-api : http://localhost:9091/swagger-ui/index.html
+- batch-job : http://localhost:9090/swagger-ui/index.html
 ---
 ## Setup Instructions
 

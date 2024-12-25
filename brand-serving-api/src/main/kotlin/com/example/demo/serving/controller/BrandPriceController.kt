@@ -1,6 +1,7 @@
 package com.example.demo.serving.controller
 
-import com.example.demo.serving.dto.LowestPriceResponse
+import com.example.demo.serving.dto.response.BrandLowestPriceResponse
+import com.example.demo.serving.dto.response.LowestPriceResponse
 import com.example.demo.serving.service.BrandService
 import io.swagger.v3.oas.annotations.Operation
 import io.swagger.v3.oas.annotations.media.Content
@@ -43,9 +44,17 @@ class BrandPriceController(private val brandPriceService: BrandService) {
             )
         ]
     )
+//    @GetMapping("/lowest-price")
+//    fun getLowestPriceBySingleBrand(): Mono<LowestPriceResponse> {
+//        return brandPriceService.calculateLowestPriceBySingleBrand()
+//            .map { LowestPriceResponse(it) }
+//            .onErrorResume { e ->
+//                Mono.error(RuntimeException("Failed to calculate lowest price: ${e.message}"))
+//            }
+//    }
     @GetMapping("/lowest-price")
-    fun getLowestPriceBySingleBrand(): Mono<LowestPriceResponse> {
-        return brandPriceService.calculateLowestPriceBySingleBrand()
+    fun getLowestPrice(): Mono<LowestPriceResponse> {
+        return brandPriceService.calculateLowestPriceBySingleBrandNew()
             .map { LowestPriceResponse(it) }
             .onErrorResume { e ->
                 Mono.error(RuntimeException("Failed to calculate lowest price: ${e.message}"))

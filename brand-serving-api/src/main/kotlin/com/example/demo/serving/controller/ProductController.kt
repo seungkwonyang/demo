@@ -1,7 +1,7 @@
 package com.example.demo.serving.controller
 
 import com.example.demo.serving.service.ProductService
-import com.example.demo.serving.dto.CategoryPriceResponse
+import com.example.demo.serving.dto.response.CategoryPriceResponse
 import io.swagger.v3.oas.annotations.Operation
 import io.swagger.v3.oas.annotations.media.Content
 import io.swagger.v3.oas.annotations.media.Schema

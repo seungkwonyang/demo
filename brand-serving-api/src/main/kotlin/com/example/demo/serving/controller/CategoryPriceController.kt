@@ -1,7 +1,6 @@
 package com.example.demo.serving.controller
 
-import com.example.demo.serving.dto.CategoryMinMaxPriceResponse
-import com.example.demo.serving.dto.CategoryPriceResponse
+import com.example.demo.serving.dto.response.CategoryMinMaxPriceResponse
 import com.example.demo.serving.service.CategoryPriceService
 import io.swagger.v3.oas.annotations.Operation
 import io.swagger.v3.oas.annotations.Parameter

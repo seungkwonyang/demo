@@ -1,6 +1,6 @@
 package com.example.demo.serving.service
 
-import com.example.demo.serving.dto.CategoryPriceResponse
+import com.example.demo.serving.dto.response.CategoryPriceResponse
 import org.springframework.data.redis.core.ReactiveRedisTemplate
 import org.springframework.stereotype.Service
 import reactor.core.publisher.Mono

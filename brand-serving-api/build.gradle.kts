@@ -14,6 +14,7 @@ repositories {
 }
 
 dependencies {
+    implementation(project(":common")) // 공통 모듈 참조
     // Spring Boot dependencies
     implementation("org.springframework.boot:spring-boot-starter-webflux")
     implementation("org.springframework.boot:spring-boot-starter-data-redis-reactive")

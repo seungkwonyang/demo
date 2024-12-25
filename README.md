@@ -14,7 +14,8 @@ The Product API allows clients to:
 - serving-api : 9091
 - batch-job : 9090
 
-## 사전 필요작업 redis등록을 위한
+## 사전 필요작업
+- redis설치 : batch job과 api를 실행하기 위해 필요
 1. redis 설치
     ```bash
     brew install redis

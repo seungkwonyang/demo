@@ -38,8 +38,8 @@ class CategoryPriceService(private val redisTemplate: ReactiveRedisTemplate<Stri
 
         return CategoryMinMaxPriceResponse(
             categoryCode = categoryCode,
-            minPriceProduct = ProductDetailDto(minProduct.brandDto.name, minProduct.price),
-            maxPriceProduct = ProductDetailDto(maxProduct.brandDto.name, maxProduct.price)
+            minPriceProduct = ProductDetailDto(minProduct.brand.name, minProduct.price),
+            maxPriceProduct = ProductDetailDto(maxProduct.brand.name, maxProduct.price)
         )
     }
 }

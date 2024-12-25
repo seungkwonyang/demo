@@ -1,6 +1,5 @@
 package com.example.demo.serving.controller
 
-import com.example.demo.serving.dto.response.BrandLowestPriceResponse
 import com.example.demo.serving.dto.response.LowestPriceResponse
 import com.example.demo.serving.service.BrandService
 import io.swagger.v3.oas.annotations.Operation

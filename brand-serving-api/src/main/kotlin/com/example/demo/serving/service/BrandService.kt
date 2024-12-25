@@ -69,7 +69,7 @@ class BrandService(private val redisTemplate: ReactiveRedisTemplate<String, Any>
 
     private fun calculateLowestPrice(productDtos: List<ProductDto>): BrandLowestPriceResponse {
         // 그룹화: 브랜드 -> 카테고리 -> 최저 가격
-        val categoryPricesByBrand = productDtos.groupBy { it.brandDto.name }
+        val categoryPricesByBrand = productDtos.groupBy { it.brand.name }
             .mapValues { (_, products) ->
                 products.groupBy { it.categoryCode }
                     .mapValues { (_, categoryProducts) ->

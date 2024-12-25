@@ -4,6 +4,25 @@
 The Product API allows clients to:
 - Retrieve the brand and price of the product with the minimum and maximum prices within a specified category.
 
+## Project 구성
+- admin-api : 상품 등록을 위한 admin
+- serving-api : 상품 조회를 위한 serving api
+- batch-job : 빠른 조회를 위한 사전에 복잡한 비지니스 요건에 대응하기 위한 cache layer
+
+## 프로젝트 별 port
+- admin-api : 기본 8080
+- serving-api : 9091
+- batch-job : 9090
+
+## 사전 필요작업 redis등록을 위한
+1. redis 설치
+    ```bash
+    brew install redis
+    ```
+2. redis 접속
+    ```bash
+    redis-cli
+    ```
 ---
 ## Setup Instructions
 
